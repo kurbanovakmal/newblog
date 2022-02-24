@@ -10,4 +10,4 @@ TBD:
 4. Faxri
 
 
-![some-tet](simon.jpg)
+![some-tet](new/simon.jpg)
