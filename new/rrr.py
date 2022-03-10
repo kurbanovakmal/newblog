@@ -1,12 +1,21 @@
-# name = input('Введите имя:')
-# first_name = input('Введите Фамилию:')
-# last_name = input('Введите отчество:')
-# a = int(input('Введите год поступления:'))
-# b = 2 + a
-# print(f"{name} {first_name} {last_name} you are going to graduate in {b}")
+x_list = [10, 20, -30, -40]
 
-numbers = input("enter nums using comma: ").split(",")
-sum = 0
-for x in numbers:
-    sum = sum + int(x)**3
-print(sum)
+
+
+
+if len(x_list) > 0 and len(x_list) < 5:
+    print('List has some elements')
+else:
+    print('no elements')
+
+
+
+if 10 in x_list:
+    print('10 is in the list')
+else:
+    print('10 is not the list')
+
+for i in x_list:
+    if i < 0:
+        print(i)
+        break
