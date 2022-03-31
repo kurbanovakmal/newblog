@@ -16,12 +16,12 @@
 # c = sum(3, 4)
 # print(c)
 
-a = [1,2,3,4,5]
+b = [1,2,3,4,5]
 
 def summ(a):
     sum = 0
     for x in a:
         sum = sum + int(x)
     return sum
-c = summ(a)
+c = summ(b)
 print(c)
