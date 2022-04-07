@@ -3,35 +3,39 @@ import random
 # b = []
 # b.append({a: 'qwqwqwq'})
 #
-product = []
+# product = []
 # print(b)
 # x = input('est account? ')
 
-a = random.expovariate(32)
+# a = random.expovariate(32)
 # d = {a:input('vedite imya ')}
 # b.append(d)
 #
 # print(d.keys())
 # print(b)
 
-customers = [{0.007: 'akmal'}, {0.008: 'roma'}]
+customers = [{"id": "1212", "name": "akmal", "prods": ["water"]}, {"id": "1212", "name": "roma","prods": ["cola"]}]
 g = input('cto to xoteli kupit? ')
 while g == 'da':
     prov = input('est account? ')
     if prov == 'da':
         prov_id = input('vedite id')
         for x in customers:
-            if prov_id == str(x.keys()):
-                customer_prod = {prov_id: input('vedite product')}
-                product.append(customer_prod)
-                print(product)
+            if prov_id == x["id"]:
+                new_prods= input('vedite product')
+                x["prods"].append(new_prods)
+                print(customers)
 
     elif prov == 'net':
-        cust_new = {a: input('vedite imya: ')}
-        customers.append(cust_new)
-        customer_prod = {a: input('vedite product')}
-        product.append(customer_prod)
-        print(product)
+        for i in customers:
+            i[0,1,2] = cust_new[0,1,2]
+            cust_new = {a: input('vedite imya, i product').split(", ")}
+        
+            customers.append(cust_new)
+            customer_prod = {a: [input('vedite product').split()]}
+            product.append(customer_prod)
+            print(product)
+
 
 
 
