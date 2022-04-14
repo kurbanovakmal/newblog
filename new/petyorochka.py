@@ -10,7 +10,7 @@ while g == 'Yes' or g == 'yes':
             break
         for x in customers:
             if prov_id == x["id"]:
-                new_prods= input("Choose a product: ")
+                new_prods= input("Choice a product: ")
                 x["prods"].append(new_prods)
                 print(customers)
             elif prov_id != x["id"]:
@@ -21,7 +21,7 @@ while g == 'Yes' or g == 'yes':
         cust_new["id"] = a
         cust_new["name"] = input("Enter a name: ")
         cust_new["age"] = int(input("Enter your age: "))
-        cust_new["prods"] = input("Choose a product: ").split(", ")
+        cust_new["prods"] = input("Choice a product: ").split(", ")
         customers.append(cust_new)
         print(customers)
     elif prov == "exit":
