@@ -1,5 +1,11 @@
 import random
-a = str(random.expovariate(32))
+# def generation_id(count):
+#     rnd_id = 0
+#     for i in range(count):
+#         rnd_id = str(random.randint(1,100)) + str(rnd_id)
+#     return rnd_id
+
+
 customers = [{"id": "1212", "name": "akmal","age":23, "prods": ["water"]}, {"id": "12121", "name": "roma","prods": ["cola"]}]
 g = input('Do you want to buy something? ')
 while g == 'Yes' or g == 'yes':
@@ -18,7 +24,7 @@ while g == 'Yes' or g == 'yes':
 
     elif prov == "No" or prov == "no":
         cust_new = {}
-        cust_new["id"] = a
+        cust_new["id"] = random.randint(1,100)
         cust_new["name"] = input("Enter a name: ")
         cust_new["age"] = int(input("Enter your age: "))
         cust_new["prods"] = input("Choice a product: ").split(", ")
